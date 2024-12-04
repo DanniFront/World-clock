@@ -6,6 +6,10 @@ let stockholmElement = document.querySelector("#stockholm");
 let stockholmTimeElement = stockholmElement.querySelector(".time");
 let stockholmDateElement = stockholmElement.querySelector(".date");
 
+let singaporeElement = document.querySelector("#singapore");
+let singaporeTimeElement = singaporeElement.querySelector(".time");
+let singaporeDateElement = singaporeElement.querySelector(".date");
+
 function updateTime() {
   let newYorkTime = moment().tz("America/New_York");
   newYorkTimeElement.innerHTML = newYorkTime.format(
@@ -18,6 +22,12 @@ function updateTime() {
     "hh:mm:ss [<small>]A[</small>]"
   );
   stockholmDateElement.innerHTML = stockholmTime.format("MMMM Do YYYY");
+
+  let singaporeTime = moment().tz("Asia/Singapore");
+  singaporeTimeElement.innerHTML = singaporeTime.format(
+    "hh:mm:ss [<small>]A[</small>]"
+  );
+  singaporeDateElement.innerHTML = singaporeTime.format("MMMM Do YYYY");
 }
 
 updateTime();
