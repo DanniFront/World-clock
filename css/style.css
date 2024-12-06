@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 500px;
   display: block;
   margin: 20px auto;
   padding: 20px 30px;
@@ -27,7 +27,7 @@ select {
   width: 80%;
   border-radius: 4px;
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h2 {
@@ -66,8 +66,7 @@ h2 {
 }
 
 a {
-  color: rgb(243, 70, 128);
-  font-weight: bold;
+  color: rgb(247, 51, 116);
   text-decoration: none;
 }
 
@@ -75,5 +74,5 @@ footer {
   font-size: 14px;
   text-align: center;
   color: black;
-  opacity: 0.8;
+  opacity: 0.6;
 }
